@@ -25,9 +25,9 @@ def find_version(*file_paths):
 with open(requirement_file, 'r') as f:
     requires = [x.strip() for x in f if x.strip()]
 
-setup(name="celery-redis-cluster-backend",
-      version=find_version('celery_redis_cluster_backend', '__init__.py'),
-      description="Celery redis cluster backend",
+setup(name="redis-cluster-backend",
+      version=find_version('redis_cluster_backend', '__init__.py'),
+      description="redis cluster backend for celery",
       license="MIT",
       author="Ryan Kung",
       author_email="ryankung@ieee.org",
