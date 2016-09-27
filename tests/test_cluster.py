@@ -1,5 +1,5 @@
 from celery import Celery
-from celery_redis_cluster_backend import RedisClusterBackend
+from redis_cluster_backend import RedisClusterBackend
 
 
 class Config:

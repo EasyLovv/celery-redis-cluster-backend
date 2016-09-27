@@ -24,12 +24,12 @@ from celery.utils.timeutils import humanize_seconds
 
 from celery.backends.base import KeyValueStoreBackend
 
-# try:
-from rediscluster.client import RedisCluster
-# from kombu.transport.redis import get_redis_error_classes
-# except ImportError:                 # pragma: no cover
-#    RedisCluster = None                    # noqa
-#    ConnectionError = None          # noqa
+try:
+    from rediscluster.client import RedisCluster
+    #from kombu.transport.redis import get_redis_error_classes
+except ImportError:                 # pragma: no cover
+    RedisCluster = None                    # noqa
+    ConnectionError = None          # noqa
 get_redis_error_classes = None  # noqa
 
 __all__ = ['RedisClusterBackend']
