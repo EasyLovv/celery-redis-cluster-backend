@@ -1,1 +1,1 @@
-from .redis_cluster import RedisClusterBackend
+__version__ = '0.1'
