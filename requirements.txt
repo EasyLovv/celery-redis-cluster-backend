@@ -1,2 +1,2 @@
 redis-py-cluster==2.0.0
-celery==4.3.0
+celery>=4.3.0
